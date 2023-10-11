@@ -1,0 +1,53 @@
+body{
+    color:rgb(246, 174, 66);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+h1 {
+    color:lightslategrey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid palevioletred
+}
+h2{
+    color: aquamarine;
+    border: 2px solid teal
+}
+p{border: 2px solid goldenrod;}
+a{
+    border: 2px solid rgb(222, 10, 80);
+}
+a{
+    color: red;
+}
+.pumpernickle{
+    color: brown;
+}
+.boldme{
+    font-weight: bold;
+}
+div{
+    width: 80%;
+    margin:auto
+    border: 9px dotted fuchsia;
+    padding-top:40px;
+    display:flex;
+    background-color: #fff;
+}   
+h1,{
+    flex:1;
+}   
+h2{
+    flex:1;
+}
+h3{
+    flex:1;
+    border: 2px solid fuchsia;
+    background-color: rgba(51, 210, 157, .67);
+    margin-left: -20px;
+    margin-top: -40px;
+}
+.hero{
+    background-image: url(blobs.jpg);
+    background-position: center 40%;
+    background-size: cover;
+    height: 100vh;
+}
