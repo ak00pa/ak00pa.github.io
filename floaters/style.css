@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "eastman medium";
+  src: url("fonts/Eastman-Grotesque-Medium-trial.otf");
+}
+
+@font-face {
+  font-family: "eastman black";
+  src: url("fonts/Eastman-Grotesque-Black-trial.otf");
+}
+
+@font-face {
+  font-family: "eastman bold";
+  src: url("fonts/Eastman-Grotesque-Bold-trial.otf");
+}
+
+@font-face {
+  font-family: "starburst";
+  src: url("fonts/Starburst.otf");
+}
+
+
+* {box-sizing: border-box;}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color:#fff;
+  margin:0;
+  background-image: url('images/background1.png');
+  background-size:cover;
+  font-family: "eastman medium";
+}
+
+h1{
+  font-family: "starburst";
+  font-size: 96px;
+}
+
+h2{
+  font-family: "eastman bold";
+  font-size: 40px;
+}
+
+#example1 {
+  background-image: url(images/background2.png), url(images/background3.png), url(images/Background4.png), url(images/Background5.png);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+}
+
+img {
+  width:100%;
+}
+
+a { text-decoration:none;}
+a:hover {
+  color:cornflowerblue;
+}
+
+header {
+  border-radius: 0px 0px 64px 64px;
+  border: 1px solid #FFF;
+  
+
+  background: linear-gradient(142deg, rgba(255, 255, 255, 0.70) -4.07%, rgba(255, 255, 255, 0.20) 82.05%);
+
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(10px);
+  width:80vw;
+  margin:auto;
+  align-items:center;
+  padding: 10px 40px 0 40px;
+  /* position:fixed; turn all these on for position fixed.
+  top:0;
+  left:0;
+  right:0; */
+}
+.logo
+.logo-img {
+  width:40px;
+  border-radius: 50%;
+}
+.icon {
+  width:32px;
+}
+nav {
+  flex:75%;
+}
+
+nav ul { 
+  list-style:none;
+  display:flex;
+  align-items:center;
+  margin:0;
+  padding:0;
+  justify-content:space-between;
+}
+nav li {
+  padding:10px 0;
+}
+nav li a {
+  padding:10px 30px;
+  color: #fff;
+}
+nav li a:hover {
+  color:#968CC0;
+}
+.home-main {
+  width:80%;
+  margin:auto;
+  margin-top:100px;
+  border-radius: 64px;
+  border: 1px solid #FFF;
+  background: linear-gradient(95deg, rgba(255, 255, 255, 0.17) 0.73%, rgba(255, 255, 255, 0.20) 99.87%);
+  color: #FFF;
+  line-height: normal;
+  text-align: justify;
+  
+  padding-bottom: 60px;
+
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(10px);
+}
+.home-main div {
+  width:80%;
+  margin:auto;
+  color: #FFF;
+  text-align: justify;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 152.023%; /* 27.364px */
+}
+
+
+
+.flexbox {
+  display:flex;
+  width:80%;
+  margin:auto;
+  margin-top:60px;
+}
+.flexbox div {
+  flex:1;
+}
+
+element.style {
+  width: 627px;
+  height: 400
+  px;
+  left: 383px;
+  top: 382px;
+  position: absolute;
+  text-align: justify;
+  color: white;
+  font-size: 18px;
+  font-family: Eastman Grotesque Trial;
+  font-weight: 500;
+  line-height: 27.36px;
+  word-wrap: break-word;
+}
+
+user agent stylesheet
+div {
+  display: block;
+}
+
+.flex-me{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-me div{
+  flex: 1;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+
+.button{
+  background-color: #FFF;
+  color: #978DC2;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 10px 16px;
+
+}
+/* 
+.button::after{
+  content: “”;
+}
+
+.button::after:hover{
+  content: “”;
+} */
+
+.button:hover{
+  background-color: #978DC2;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 10px 16px;
+
+}
+
+.button-arrow{
+  width: 10px;
+}
