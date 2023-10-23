@@ -26,7 +26,7 @@ a{
 }
 div{
     width: 80%;
-    margin:auto
+    margin:auto;
     border: 9px dotted fuchsia;
     padding-top:40px;
     display:flex;
