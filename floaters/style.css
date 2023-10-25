@@ -55,6 +55,7 @@ body {
 .page4 {
   background-image: url('images/background5.png');
   background-size: cover;
+  height: 100vh;
 
 }
 
@@ -63,6 +64,9 @@ body {
 h1{
   font-family: "starburst";
   font-size: 96px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 16.32px;
 }
 
 h2{
@@ -135,7 +139,7 @@ nav li a:hover {
 .home-main {
   width:80%;
   margin:auto;
-  margin-top:100px;
+  margin-top: 35px;
   border-radius: 64px;
   border: 1px solid #FFF;
   background: linear-gradient(95deg, rgba(255, 255, 255, 0.17) 0.73%, rgba(255, 255, 255, 0.20) 99.87%);
@@ -143,8 +147,7 @@ nav li a:hover {
   line-height: normal;
   text-align: justify;
   
-  padding-bottom: 60px;
-
+  padding-bottom: 40px;
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
   backdrop-filter: blur(10px);
 }
@@ -154,7 +157,7 @@ nav li a:hover {
   margin:auto;
   color: #FFF;
   text-align: justify;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 152.023%; /* 27.364px */
@@ -284,7 +287,7 @@ div {
 
 .right-arrow {
   position: absolute;
-  right: 10px; /* Adjust the right position as needed */
+  right: 10px; 
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -412,7 +415,7 @@ h3 {
   top: -410px; 
   left: 455px; 
   width: 384px;
-  height: 541px;
+  height: 300px;
   display: flex; 
   justify-content: center; 
   align-items: center;
@@ -453,7 +456,7 @@ h3 {
   top: -410px; 
   left: 455px; 
   width: 384px;
-  height: 541px;
+  height: 300px;
   display: flex; 
   justify-content: center; 
   align-items: center;
@@ -489,6 +492,10 @@ h3 {
     background: linear-gradient(165deg, rgba(255, 255, 255, 0.70) 18.98%, rgba(255, 255, 255, 0.20) 80%);
     box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
     backdrop-filter: blur(10px);
+    top: -504px; 
+    left: 455px; 
+    width: 384px;
+    height: 300px;    
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -524,7 +531,7 @@ backdrop-filter: blur(10px);
 top: -504px; 
 left: 455px; 
 width: 384px;
-height: 541px;
+height: 300px;
 display: flex; 
 justify-content: center; 
 align-items: center;
