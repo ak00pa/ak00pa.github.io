@@ -1,3 +1,5 @@
+/* Font Family */
+
 @font-face {
   font-family: "eastman medium";
   src: url("fonts/Eastman-Grotesque-Medium-trial.otf");
@@ -33,30 +35,30 @@ body {
   word-wrap: break-word
 }
 
+/* Background Images */
+
 .page1 {
   background-image: url('images/background2.png');
   background-size: cover;
-  height: 100vh;
 }
 
 .page2 {
   background-image: url('images/background3.png');
   background-size: cover;
-  height: 100vh;
 }
 
 .page3 {
   background-image: url('images/background4.png');
   background-size: cover;
-  height: 100vh;
 }
 
 .page4 {
   background-image: url('images/background5.png');
   background-size: cover;
-  height: 100vh;
 
 }
+
+/* Text Refrence */
 
 h1{
   font-family: "starburst";
@@ -73,11 +75,7 @@ h3{
   font-size: 48px;
 }
 
-#example1 {
-  background-image: url(images/background2.png), url(images/background3.png), url(images/Background4.png), url(images/Background5.png);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
-}
+/* Top NAV */
 
 img {
   width:100%;
@@ -151,7 +149,6 @@ nav li a:hover {
   backdrop-filter: blur(10px);
 }
 
-
 .home-main div {
   width:80%;
   margin:auto;
@@ -200,7 +197,15 @@ div {
 
 .flex-me div{
   flex: 1;
+  text-align: center;
 }
+
+.flex-me div img{
+  width: auto;
+  height: 275px;
+}
+
+
 
 .column {
   float: left;
@@ -213,7 +218,8 @@ div {
   color: #978DC2;
   font-weight: bold;
   border-radius: 30px;
-  padding: 10px 16px;
+  padding: 10px 26px;
+  text-align: center;
 
 }
 
@@ -263,6 +269,27 @@ div {
   position: relative;
 }
 
+
+
+/* Arrows Content */
+
+
+.left-arrow {
+  position: absolute;
+    left: 10px; /* Adjust the left position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 10px; /* Adjust the right position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
 .arrow {
   position: absolute;
   top: 50%;
@@ -309,33 +336,6 @@ a:hover .hover-image {
   display: block;
 }
 
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.left-column {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 54px;
-  padding: 20px;
-  text-align: center;
-}
-
-.right-column {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 54px;
-  padding: 20px;
-  text-align: center;
-}
-
-.image-container {
-  text-align: center;
-}
-
 .arrow {
   position: absolute;
   top: 50%;
@@ -346,17 +346,41 @@ a:hover .hover-image {
   font-size: 24px;
 }
 
-.left-arrow {
-  left: 10px;
+
+
+/* Container's columns */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.left-column {
+  border-radius: 54px;
+  padding: 20px;
+  text-align: center;
 }
 
-.right-arrow {
-  right: 10px;
+.right-column {
+  border-radius: 54px;
+  padding: 20px;
+  text-align: center;
 }
+
+.image-container {
+  text-align: center;
+}
+
+
+
 
 .content {
   text-align: centered;
   letter-spacing: 1px;
+  padding: 40px;
   
 }
 
@@ -365,16 +389,38 @@ h3 {
 }
 
 
-.woop-image-glass{
+
+/* Container's positioning context */
+
+.grid-container {
+  position: relative; 
+  width: 600px; 
+  height: 600px; 
+}
+
+
+
+.woop-image-glass {
   width: 384px;
   height: 541px;
   flex-shrink: 0;
-  fill: linear-gradient(107deg, rgba(255, 255, 255, 0.70) -10.39%, rgba(255, 255, 255, 0.20) 84.43%);
-  stroke-width: 1px;
-  stroke: solid #ffffff00;
-  filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.10));
+  border-radius: 64px;
+  border: 1px solid #FFF;
+  background: linear-gradient(158deg, rgba(255, 255, 255, 0.70) 24.06%, rgba(255, 255, 255, 0.20) 77.75%);
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
   backdrop-filter: blur(10px);
-}
+  top: -410px; 
+  left: 455px; 
+  width: 384px;
+  height: 541px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  }
+
 
 .woop-text-glass{
   width: 588px;
@@ -385,7 +431,85 @@ h3 {
   background: linear-gradient(34deg, rgba(255, 255, 255, 0.70) -2.31%, rgba(255, 255, 255, 0.20) 54.5%);
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
   backdrop-filter: blur(10px);
+  position: absolute; 
+  top: 35px; 
+  left: 123px; 
+  width: 587px;
+  height: 541px;
 }
+
+
+
+.laga-image-glass{
+  width: 400px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 64px;
+  border: 1px solid #ffffff08;
+  background: linear-gradient(139deg, rgba(255, 255, 255, 0.70) 37.19%, rgba(255, 255, 255, 0.20) 92.62%);
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(10px);
+  position: absolute; 
+  top: -410px; 
+  left: 455px; 
+  width: 384px;
+  height: 541px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  }
+
+  .laga-text-glass{
+  width: 588px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 64px;
+  border: 1px solid #ffffff00;
+  background: linear-gradient(221deg, rgba(255, 255, 255, 0.20) -3.57%, rgba(255, 255, 255, 0.20) 56.15%);
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(10px);
+  position: absolute; 
+  top: 35px; 
+  left: 123px; 
+  width: 587px;
+  height: 541px;
+  }
+
+
+
+.orf-image-glass{
+    width: 384px;
+    height: 541px;
+    flex-shrink: 0;
+    border-radius: 64px;
+    border: 1px solid #ffffff00;
+    background: linear-gradient(165deg, rgba(255, 255, 255, 0.70) 18.98%, rgba(255, 255, 255, 0.20) 80%);
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .orf-text-glass{
+  width: 588px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 64px;
+  border: 1px solid #ffffff00;
+  background: linear-gradient(210deg, rgba(255, 255, 255, 0.70) -5.69%, rgba(255, 255, 255, 0.20) 37.28%);
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(10px);
+  position: absolute; 
+  top: 125px; 
+  left: 713px; 
+  width: 587px;
+  height: 541px;
+  }
+  
 
 
 .aro-image-glass{
@@ -397,6 +521,13 @@ border: 1px solid #ffffff00;
 background: linear-gradient(298deg, rgba(255, 255, 255, 0.70) 3.88%, rgba(255, 255, 255, 0.20) 37.86%);
 box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
 backdrop-filter: blur(10px);
+top: -504px; 
+left: 455px; 
+width: 384px;
+height: 541px;
+display: flex; 
+justify-content: center; 
+align-items: center;
 }
 
 .aro-text-glass{
@@ -408,48 +539,9 @@ border: 1px solid #ffffff00;
 background: linear-gradient(266deg, rgba(255, 255, 255, 0.70) -46.45%, rgba(255, 255, 255, 0.20) 62.06%);
 box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
 backdrop-filter: blur(10px);
-}
-
-.laga-image-glass{
-width: 400px;
-height: 500px;
-flex-shrink: 0;
-border-radius: 64px;
-border: 1px solid #ffffff08;
-background: linear-gradient(139deg, rgba(255, 255, 255, 0.70) 37.19%, rgba(255, 255, 255, 0.20) 92.62%);
-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
-backdrop-filter: blur(10px);
-}
-
-.laga-text-glass{
-width: 588px;
-height: 500px;
-flex-shrink: 0;
-border-radius: 64px;
-border: 1px solid #ffffff00;
-background: linear-gradient(221deg, rgba(255, 255, 255, 0.20) -3.57%, rgba(255, 255, 255, 0.20) 56.15%);
-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
-backdrop-filter: blur(10px);
-}
-
-.orf-image-glass{
-  width: 384px;
-  height: 541px;
-  flex-shrink: 0;
-  border-radius: 64px;
-  border: 1px solid #ffffff00;
-  background: linear-gradient(165deg, rgba(255, 255, 255, 0.70) 18.98%, rgba(255, 255, 255, 0.20) 80%);
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
-  backdrop-filter: blur(10px);
-}
-
-.orf-text-glass{
-width: 588px;
-height: 500px;
-flex-shrink: 0;
-border-radius: 64px;
-border: 1px solid #ffffff00;
-background: linear-gradient(210deg, rgba(255, 255, 255, 0.70) -5.69%, rgba(255, 255, 255, 0.20) 37.28%);
-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
-backdrop-filter: blur(10px);
+position: absolute; 
+top: 125px; 
+left: 713px; 
+width: 587px;
+height: 541px;
 }
