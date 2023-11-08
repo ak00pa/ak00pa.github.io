@@ -1,0 +1,120 @@
+/* Font Family */
+
+@font-face {
+    font-family: "helvetica bold";
+    src: url("fonts/HelveticaNeue\ Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "massilia regular";
+    src: url("fonts/Massilia\ Regular.otf");
+  }
+  
+  @font-face {
+    font-family: "massilia light";
+    src: url("fonts/Massilia\ Light.otf");
+  }
+  
+  @font-face {
+    font-family: "massilia medium";
+    src: url("fonts/Massilia\ Medium.otf");
+  }
+  
+  @font-face {
+    font-family: "massilia bold";
+    src: url("fonts/Massilia\ Bold.otf");
+}
+
+@font-face {
+    font-family: "massilia black";
+    src: url("fonts/Massilia\ Black.otf.otf");
+}
+
+/* Text Refrence */
+
+h1{
+    font-family: "helvetica bold";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 16.32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    color: #000;
+
+  }
+  
+  h2{
+    font-family: "massilia light";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    color: #000;
+  }
+  
+  h3{
+    font-family: "massilia regular";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    color: #000;
+  }
+
+  h4{ 
+    font-family: "massilia bold";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    color: #000;
+  }
+
+
+h5{
+    font-family: "helvetica bold";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFCF06;
+}
+
+/* top nav */
+
+.topnav img {
+    float: left;
+    padding: 8px; /* Adjust the padding as needed */
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #FFCF06; /* Text color */
+    text-align: center;
+    padding: 14px 16px; /* Padding around each link */
+    text-decoration: none;
+}
+
+
+/* Body text placement */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text {
+    grid-column: 1 / span 6; 
+    text-align: left;
+}
+
+
+.text p {
+    font-size: 23px;
+    line-height: 1.5;
+}
