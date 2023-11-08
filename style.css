@@ -1,58 +1,133 @@
+/*font-family: 'Inconsolata', monospace;
+font-family: 'Pixelify Sans', sans-serif;
+font-family: 'Space Mono', monospace;
+*/
+
+/* COLORS
+--onyx: #424242ff;
+--brown-sugar: #A97151ff;
+--silver: #CDCCCAff;
+--khaki: #C1B1A4ff;
+--rich-black: #091516ff;
+
+onyx: rgba(66, 66, 66, 1);
+brown-sugar: rgba(169, 113, 81, 1);
+silver: rgba(205, 204, 202, 1);
+khaki: rgba(193, 177, 164, 1);
+rich-black: rgba(9, 21, 22, 1);
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    border-radius: 20px
+}
+
 body{
-    color:rgb(246, 174, 66);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-}
-h1 {
-    color:lightslategrey;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: 2px solid palevioletred
-}
-h2{
-    color: aquamarine;
-    border: 2px solid teal
-}
-p{border: 2px solid goldenrod;}
-a{
-    border: 2px solid rgb(222, 10, 80);
-}
-a{
-    color: red;
-}
-.pumpernickle{
-    color: brown;
-}
-.boldme{
-    font-weight: bold;
-}
-div{
-    width: 80%;
-    margin:auto;
-    border: 9px dotted fuchsia;
-    padding-top:40px;
-    display:flex;
-    background-color: #fff;
-}   
-h1,{
-    flex:1;
-}   
-h2{
-    flex:1;
-}
-h3{
-    flex:1;
-    border: 2px solid fuchsia;
-    background-color: rgba(51, 210, 157, .67);
-    margin-left: -20px;
-    margin-top: -40px;
-}
-.hero{
-    background-image: url(blobs.jpg);
-    background-position: center 40%;
+    margin: 0;
+    background-image: url('images/gamecub.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+}
+
+.content{
+    padding: 60px;
+    width: 80%;
+    min-height: 80vh;
+    margin: 80px auto;
+    background-color:rgba(193, 177, 164, .8);
+    border-radius: 20px; 
+} 
+
+a{
+    color: #424242ff;
+}
+
+a:hover{
+    color: rgb(242, 104, 104);
+}
+
+/*Photo by Lisa Fotios: https://www.pexels.com/photo/photo-of-video-game-console-on-brown-wooden-table-4511372/ */
+
+h1 {
+    color:#73befc;
+    font-size: 60px;
+
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li::before{
+    content: "\2022";
+    color:#424242ff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.cards{
+    display: flex;
+}
+
+.card{
+    flex:33.3%;
+    background-color: white;
+    font-family: 'Pixelify Sans', sans-serif;
+    margin-right: 20px; 
+    padding: 16px;
+    border-radius: 20px
+}
+
+.card:last-child{
+    margin-right: 0;
+}
+
+.card img{
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.button{
+    display: inline-block;
+    background-color:#424242ff;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.button:hover{
+    background-color: #A97151ff;
+
 }
 
 
+.resources{
+    margin-top: 80px;
+    display: flex;
+}
 
+.resources div{
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right:20px; 
+}
 
-  
+.resources div:last-child{
+    margin-right: 0;
+}
