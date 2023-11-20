@@ -56,7 +56,6 @@ body, html {
 h1{
   font-family: "massilia bold";
   padding: 0;
-  width: 503px;
   height: 44px;
   color: #000;
   font-size: 32px;
@@ -104,6 +103,26 @@ h5{
     color: #FFCF06;
 }
 
+.signup-container {
+  text-align: center;
+  font-family: "massilia regular";
+  display: inline-block;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.email-input {
+  text-align: center;
+  font-family: "massilia bold";
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 0px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
 /* top nav */
 
 .topnav {
@@ -145,6 +164,24 @@ h5{
     margin: 0 auto;
 }
 
+.dealer-text h1{
+  font-size: 29px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding: 2px 2px;
+  margin-top: 20px;
+  margin: 60px 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  width: 584px;
+  height: 110px;
+  flex-shrink: 0;
+}
+
 .text {
     grid-column: 1 / span 6; 
     text-align: left;
@@ -155,6 +192,159 @@ h5{
     font-size: 23px;
     line-height: 1.5;
 }
+
+/* body placement */
+
+.how-box{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding: 2px;
+  margin-top: 20px;
+  margin: 2px 10px;
+}
+
+.how-box p{
+font-family: "massilia regular";
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 38px;
+width: 584px;
+height: 110px;
+flex-shrink: 0;
+}
+
+.portland-box{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding: 15px 550px;
+  margin-top: 20px;
+  margin: 2px 10px;
+}
+
+.portland-box p{
+  font-family: "massilia regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  width: 584px;
+  height: 110px;
+  flex-shrink: 0;
+}
+
+.vancouver-box{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding: 60px 1px;
+  margin-top: 20px;
+  margin: 2px 10px;
+}
+
+.vancouver-box p{
+  font-family: "massilia regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  width: 584px;
+  height: 110px;
+  flex-shrink: 0;
+}
+
+.open-box{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding: 0px 125px;
+  margin-top: 20px;
+  margin: 2px 10px;
+}
+
+.open-box p{
+  font-family: "massilia regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  width: 584px;
+  height: 110px;
+  flex-shrink: 0;
+}
+
+.vancouver-hours-box{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding: 60px 1px;
+  margin-top: 20px;
+  margin: 2px 10px;
+}
+
+.vancouver-hours-box p{
+  font-family: "massilia regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  width: 584px;
+  height: 110px;
+  flex-shrink: 0;
+}
+
+.portland-hours-box{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding: 60px 1px;
+  margin-top: 20px;
+  margin: 2px 10px;
+}
+
+.portland-hours-box p{
+  font-family: "massilia regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  width: 584px;
+  height: 110px;
+  flex-shrink: 0;
+}
+
+.sign-box{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding: 0px 1px;
+  margin-top: 20px;
+  margin: 2px -35px;
+}
+
+.sign-box p{
+  font-family: "massilia regular";
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  height: 110px;
+  flex-shrink: 0;
+  margin: 20px;
+}
+
+
 
 /* Page Pattern */
 
@@ -180,7 +370,27 @@ h5{
 
 .home-left-pattern {
   position: absolute;
+  bottom: 79%;
+  left: 3%;
+  right: 0%; 
+  transform: translate(-50%, -50%);
+  max-width: 100%; 
+  height: 30%; 
+}
+
+.how-big-pattern {
+  position: absolute;
   top: 79%;
+  left: 3%;
+  right: 0%; 
+  transform: translate(-50%, -50%);
+  max-width: 100%; 
+  height: 30%; 
+}
+
+.how-left-pattern {
+  position: absolute;
+  bottom: 10%;
   left: 3%;
   right: 0%; 
   transform: translate(-50%, -50%);
@@ -200,20 +410,66 @@ img {
   width:100%;
 }
 
-.button {
-  display:inline-block;
-  background-color: #F47627;
+.email-button{
+  position: absolute; 
+  right: 120px;
+  display: inline-block;
+  background-color: #ffffff;
   color: white;
-  text-decoration:none;
+  text-decoration: none;
   padding: 8px 100px;
   border-radius: 10px;
-  border:2px solid #F47627;
+
 }
-.button:hover {
+
+
+.signup-button {
+  font-family: "massilia bold";
+  background-color: #F47627;
+  color: white;
+  padding: 2px 180px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto; 
+  text-align: center; /* Center-align the text within the button */
+}
+
+
+.button {
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 8px;
+  height: 160px;
+  right: 120px;
+  display: inline-block;
+  background-color: #F47627;
+  color: white;
+  text-decoration: none;
+  padding: 8px 160px;
+  border-radius: 10px;
+
+}
+
+.signup-button:hover {
   background-color: white;
   color: #F47627;
-  border:2px solid #ffff;
+  border: 2px solid #fff;
 }
+
+
+.sign-box {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+  
 
 /* START of Mobile Menu */
 .nav, .desktop {
@@ -324,6 +580,7 @@ img {
 main {
   margin-top:20px;
 }
+
 .flex {
   display:flex;
   width:80%;
@@ -336,6 +593,35 @@ main {
 .flex .left {
   padding-right:60px;
 }
+
+/* Contact Us Layout */
+
+.flex-me{
+  display: flex;
+}
+
+.flex-me .left{
+  display: 60%;
+}
+
+.flex-me .right{
+  display: 40%;
+}
+
+.open-hours-box p{
+  font-family: "massilia regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  width: 584px;
+  height: 110px;
+  flex-shrink: 0;
+}
+
+/* Test */
+
+
 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -399,8 +685,6 @@ main {
     .menu-image {
         display: none;
     }
-
-    
 }
 
 

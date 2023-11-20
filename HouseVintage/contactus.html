@@ -2,66 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hamburgers!</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-    <div class="topnav">
-        <img style="width: 100%; height: 100%" src="images/top-nav.svg"/>
-    <header class="nav">
-        <div class="icon">
-            <div class="hamburger"></div>
-        </div>
-        <div class="topnav">
-            <div class="menu-mobile">
-                <h5>
-                    <a href="index.html">How it Work</a>
-                    <a href="portland.html">Portland</a>
-                    <a href="vancouver.html">Vancouver</a>
-                    <a href="contactus.html">Contact Us</a>
-                </h5>
-            </div>          
-        </div>
-       
+  <div class="topnav">
 
-    </header>
-      <header class="desktop">
-        <div class="menu-desktop">
-          <header id="main-header">
-            <h5>
-              <a href="index.html">How it Work</a>
-              <a href="portland.html">Portland</a>
-              <a href="vancouver.html">Vancouver</a>
-              <a href="contactus.html">Contact Us</a>
+      <img style="width: 100%; height: 100%" src="images/top-nav.svg" />
+      <img class="menu-image" src="images/hov-logo-home.png" alt="Home Logo">
+  </div>
+
+
+  <header class="nav">
+      <div class="icon">
+          <div class="hamburger"></div>
+      </div>
+
+      <div class="menu-mobile">      
+            <a href="index.html" img class="menu-image" src="images/hov-logo-home.png" alt="Home Logo">
+          </a>
+          <h5>
+              <a href="how.html" class="menu-link">How it Work</a>
+              <a href="portland.html" class="menu-link">Portland</a>
+              <a href="vancouver.html" class="menu-link">Vancouver</a>
+              <a href="contactus.html" class="menu-link">Contact Us</a>
           </h5>
       </div>
-    </header>
-   
-    <main>
+  </header>
 
 
-<div class="container">
-    <div class="text">
-      <h1>
-        YOUR VINTAGE WONDERLAND
-      </h1>
-    <h2>
-        <div class="text p">
-            <p> 
-              <h2>
-                House of Vintage is a second-hand store featuring items dating from the 1960s to the early 2000s. Their Vancouver location specializes in quality mid-century modern furniture and decor while the Portland location specializes in vintage clothing, shoes and accessories. Between these two locations, they have over 70 vendors hand-sorting amazing finds for their customers.
-             </h2>  
-            </p>
-                <a class="button" href="#link">Sign Up</a>
-            </p>
+</div>
+
+
+</body>
+
+
+    <header class="desktop">
+        <div class="menu-desktop">
+            <h5>
+                <a href="how.html" class="menu-link">How it Work</a>
+                <a href="portland.html" class="menu-link">Portland</a>
+                <a href="vancouver.html" class="menu-link">Vancouver</a>
+                <a href="contactus.html" class="menu-link">Contact Us</a>
+            </h5>
         </div>
+    </header>
+
     
-     </h2>
-     
+  <main>
+
+    <section class="flex-me">
+      <div class="left">
+        <div class="open-box">
+          <h1>Open Hours</h1>
+          <p>Our locations are open seven days a week. We are open on all holidays except Thanksgiving Day & Christmas Day. Please visit us during our business hours.
+          </p>
+          <div class="vancouver-hour-box">
+            <h1>Vancouver</h1>
+            <p>1501 Main St, Vancouver, WA 98660<br>
+              360-694-1991<br>
+              Mon-Sun:  11 am to 6 pm
+            </p>
+          </div> 
       </div>
-    </main>
+    </div>
+
+    <div class="flex-me">
+      <div class="right">
+      
+    <div class="signup-container">
+      <h1>Sign Up For Email
+      </h1>
+        <p>Be the first to hear about new dealers, exclusive events and online offers  
+        </p>
+      <input type="email" class="email-input" placeholder="Enter your email">
+      <button class="signup-button" href="#link">Sign Up</button>
+    </div> 
+    </section>
+
+    
+
+
+
+  </main>
+
+ 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-link').hover(function () {
+                var imageUrl = $(this).data('image');
+                $('.menu-image').css('background-image', 'url(' + imageUrl + ')');
+            }, function () {
+                // Reset the background image on mouse out
+                $('.menu-image').css('background-image', 'none');
+            });
+        });
+    </script>
 </body>
 </html>
