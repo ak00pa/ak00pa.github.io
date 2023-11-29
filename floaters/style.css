@@ -193,9 +193,9 @@ div {
   display: block;
 }
 
-.flex-me{
+.flex-me {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .flex-me div{
@@ -251,9 +251,8 @@ div {
 }
 
 .left-column {
-  border-radius: 20px 0 0 20px;
-  padding: 20px;
-  text-align: left;
+  flex: 1;
+  /* Additional styles for the left column if needed */
 }
 
 .right-column {
@@ -268,8 +267,8 @@ div {
 }
 
 .image-container {
-  text-align: center;
   position: relative;
+  /* Add any additional styling for the container */
 }
 
 
@@ -404,124 +403,122 @@ h3 {
 
 
 .woop-image-glass {
-  width: 384px;
-  height: 541px;
-  flex-shrink: 0;
-  border-radius: 64px;
-  border: 1px solid #FFF;
-  background: linear-gradient(158deg, rgba(255, 255, 255, 0.70) 24.06%, rgba(255, 255, 255, 0.20) 77.75%);
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
-  backdrop-filter: blur(10px);
-  top: -410px; 
-  left: 455px; 
-  width: 384px;
-  height: 300px;
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-  }
+width: 384px;
+height: 541px;
+flex-shrink: 0;
+border-radius: 64px;
+border: 1px solid #FFF;
+background: linear-gradient(158deg, rgba(255, 255, 255, 0.70) 24.06%, rgba(255, 255, 255, 0.20) 77.75%);
+box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+backdrop-filter: blur(10px);
+top: -410px; 
+left: 455px; 
+width: 384px;
+height: 300px;
+display: flex; 
+justify-content: center; 
+align-items: center;
+display: flex; 
+justify-content: center; 
+align-items: center;
+}
 
 
 .woop-text-glass{
-  width: 588px;
-  height: 500px;
-  flex-shrink: 0;
-  border-radius: 64px;
-  border: 1px solid #ffffff00;
-  background: linear-gradient(34deg, rgba(255, 255, 255, 0.70) -2.31%, rgba(255, 255, 255, 0.20) 54.5%);
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
-  backdrop-filter: blur(10px);
-  position: absolute; 
-  top: 35px; 
-  left: 123px; 
-  width: 587px;
-  height: 541px;
+width: 588px;
+height: 500px;
+flex-shrink: 0;
+border-radius: 64px;
+border: 1px solid #ffffff00;
+background: linear-gradient(34deg, rgba(255, 255, 255, 0.70) -2.31%, rgba(255, 255, 255, 0.20) 54.5%);
+box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+backdrop-filter: blur(10px);
+position: absolute; 
+top: 35px; 
+left: 123px; 
+width: 587px;
+height: 541px;
 }
 
 
 
 .laga-image-glass{
-  width: 400px;
-  height: 500px;
-  flex-shrink: 0;
-  border-radius: 64px;
-  border: 1px solid #ffffff08;
-  background: linear-gradient(139deg, rgba(255, 255, 255, 0.70) 37.19%, rgba(255, 255, 255, 0.20) 92.62%);
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
-  backdrop-filter: blur(10px);
-  position: absolute; 
-  top: -290px; 
-  left: 455px; 
-  width: 384px;
-  height: 300px;
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-  }
+width: 400px;
+height: 500px;
+flex-shrink: 0;
+border-radius: 64px;
+border: 1px solid #ffffff08;
+background: linear-gradient(139deg, rgba(255, 255, 255, 0.70) 37.19%, rgba(255, 255, 255, 0.20) 92.62%);
+box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+backdrop-filter: blur(10px);
+position: absolute; 
+top: -290px; 
+left: 455px; 
+width: 384px;
+height: 300px;
+display: flex; 
+justify-content: center; 
+align-items: center;
+display: flex; 
+justify-content: center; 
+align-items: center;
+}
 
-  .laga-text-glass{
-  width: 588px;
-  height: 500px;
-  flex-shrink: 0;
-  border-radius: 64px;
-  border: 1px solid #ffffff00;
-  background: linear-gradient(221deg, rgba(255, 255, 255, 0.20) -3.57%, rgba(255, 255, 255, 0.20) 56.15%);
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
-  backdrop-filter: blur(10px);
-  position: absolute; 
-  top: 35px; 
-  left: 123px; 
-  width: 587px;
-  height: 541px;
-  }
+.laga-text-glass{
+width: 588px;
+height: 500px;
+flex-shrink: 0;
+border-radius: 64px;
+border: 1px solid #ffffff00;
+background: linear-gradient(221deg, rgba(255, 255, 255, 0.20) -3.57%, rgba(255, 255, 255, 0.20) 56.15%);
+box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+backdrop-filter: blur(10px);
+position: absolute; 
+top: 35px; 
+left: 123px; 
+width: 587px;
+height: 541px;
+}
 
 
 
 .orf-image-glass{
-    width: 384px;
-    height: 541px;
-    flex-shrink: 0;
-    border-radius: 64px;
-    border: 1px solid #ffffff00;
-    background: linear-gradient(165deg, rgba(255, 255, 255, 0.70) 18.98%, rgba(255, 255, 255, 0.20) 80%);
-    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
-    backdrop-filter: blur(10px);
-    top: -504px; 
-    left: 455px; 
-    width: 384px;
-    height: 300px;    
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-  }
+width: 384px;
+height: 541px;
+flex-shrink: 0;
+border-radius: 64px;
+border: 1px solid #ffffff00;
+background: linear-gradient(165deg, rgba(255, 255, 255, 0.70) 18.98%, rgba(255, 255, 255, 0.20) 80%);
+box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+backdrop-filter: blur(10px);
+top: -504px; 
+left: 455px; 
+width: 384px;
+height: 300px;    
+display: flex; 
+justify-content: center; 
+align-items: center;
+}
   
-  .orf-text-glass{
-  width: 588px;
-  height: 500px;
-  flex-shrink: 0;
-  border-radius: 64px;
-  border: 1px solid #ffffff00;
-  background: linear-gradient(210deg, rgba(255, 255, 255, 0.70) -5.69%, rgba(255, 255, 255, 0.20) 37.28%);
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
-  backdrop-filter: blur(10px);
-  position: absolute; 
-  top: 125px; 
-  left: 713px; 
-  width: 587px;
-  height: 541px;
-  }
+.orf-text-glass{
+width: 588px;
+height: 500px;
+flex-shrink: 0;
+border-radius: 64px;
+border: 1px solid #ffffff00;
+background: linear-gradient(210deg, rgba(255, 255, 255, 0.70) -5.69%, rgba(255, 255, 255, 0.20) 37.28%);
+box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+backdrop-filter: blur(10px);
+position: absolute; 
+top: 125px; 
+left: 713px; 
+width: 587px;
+height: 541px;
+}
   
 
 
 .aro-image-glass{
-width: 384px;
-height: 541px;
 flex-shrink: 0;
 border-radius: 64px;
 border: 1px solid #ffffff00;
@@ -551,4 +548,11 @@ top: 125px;
 left: 713px; 
 width: 587px;
 height: 541px;
+}
+
+.aro-image-glass img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 63px; /* Adjust to match the container's border-radius */
 }
