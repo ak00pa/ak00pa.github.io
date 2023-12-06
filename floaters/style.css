@@ -35,6 +35,11 @@ body {
   word-wrap: break-word
 }
 
+.orf-image-glass img {
+  height:100%;
+  width:auto;
+}
+
 /* Background Images */
 
 .page1 {
@@ -203,7 +208,7 @@ div {
   text-align: center;
 }
 
-.flex-me div img{
+.flex-me .image-glass img{
   width: auto;
   height: 275px;
 }
@@ -283,6 +288,9 @@ div {
     transform: translateY(-50%);
     cursor: pointer;
 }
+.aro-image-glass .left-arrow {
+  left:0;
+}
 
 .right-arrow {
   position: absolute;
@@ -291,7 +299,9 @@ div {
   transform: translateY(-50%);
   cursor: pointer;
 }
-
+.aro-image-glass .right-arrow {
+  right:0;
+}
 .arrow {
   position: absolute;
   top: 50%;
@@ -312,7 +322,14 @@ div {
   width: 195px;
   height: 75px;
 }
-
+.flex-me .image-glass .arrow img {
+  width: 195px;
+  height: 75px;
+}
+.flex-me .aro-image-glass .arrow img {
+  width: auto;
+  height: 75px;
+}
 .image-container {
   display: inline-block;
   position: relative;
